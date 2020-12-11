@@ -95,13 +95,18 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: new TextStyle(
+                fontSize: 100.0,
+              ),
 
             ),
         Container(
           margin: EdgeInsets.all(20),
           child: MaterialButton(
-            child: Text('Increase counter'),
+            child: Text('INCREASE COUNTER',style: new TextStyle(
+              fontSize: 20.0,
+              ),
+            ),
             color: Colors.blueAccent,
             textColor: Colors.white,
               onPressed: _incrementCounter,
